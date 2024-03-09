@@ -31,6 +31,7 @@ public class AdminController {
         Admin createdAdmin = adminService.addAdmin(a);
         return new ResponseEntity<>(createdAdmin, HttpStatus.CREATED);
     }
+    
 
     @DeleteMapping("delet/customers/{cid}")
     public ResponseEntity<?> deleteCustomer(@PathVariable("cid") long customerId) {
